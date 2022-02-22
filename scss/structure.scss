@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 16px;
+}
+
+.bruh {
+	min-height: 500px;
+	width: 70%;
+	background-color: cadetblue;
+	margin: 0 auto;
+
+	.box {
+		width: 50%;
+		min-height: 100px;
+		background-color: red;
+	}
+
+	.mediabox {
+		width: 600px;
+		height: 100px;
+		background-color: black;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.bruh {
+		// background-color: gray;
+
+		.mediabox {
+			width: 300px;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+	.bruh {
+		background-color: green;
+	}
+}
